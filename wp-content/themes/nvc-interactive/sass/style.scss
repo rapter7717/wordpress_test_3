@@ -109,3 +109,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Woocommerce
 --------------------------------------------------------------*/
 @import "woocommerce";
+
+.site-header {
+  background-color: $color__header-color;
+}
+
+.site-content {
+  background-color: $color__backdrop-main;
+}
