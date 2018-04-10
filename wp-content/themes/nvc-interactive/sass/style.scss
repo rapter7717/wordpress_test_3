@@ -112,6 +112,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .site-header {
   background-color: $color__header-color;
+  text-align: center;
+}
+
+.page_item {
+  padding: 1em;
+
 }
 
 .site-content {
