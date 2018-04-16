@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area" >
-    <h1> Home Page </h1>
+    <h1><center> Home Page </center></h1>
 		<main id="main" class="site-main">
 
 
