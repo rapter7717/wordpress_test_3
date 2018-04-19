@@ -110,6 +110,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "woocommerce";
 
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+@import "custom/custom";
+
 .site-header {
   background-color: $color__header-color;
   text-align: center;

@@ -38,7 +38,7 @@ get_header();
     <?php wp_reset_postdata(); ?>
 
   <?php else : ?>
-    <p><?php __('No News'); ?></p>
+    <p><?php __('Nothing New'); ?></p>
   <?php endif; ?>
 
 		</main><!-- #main -->
