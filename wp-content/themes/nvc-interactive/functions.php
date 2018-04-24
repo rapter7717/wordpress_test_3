@@ -127,6 +127,10 @@ function nvc_interactive_scripts() {
 	//popper js for bootstrap 4
 	wp_register_script( 'wp-popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', false, '', true );
 
+	//JS Script
+
+	wp_enqueue_script('main-js-script', get_template_directory_uri() . '/dist/script.min.js', array('jquery', 'wp-popper'), time(), true );
+
 	wp_enqueue_script( 'wp-popper');
 
 	wp_enqueue_script( 'nvc-interactive-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
