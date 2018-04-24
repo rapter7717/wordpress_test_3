@@ -16,8 +16,14 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area" >
-    <h1><center> Home Page </center></h1>
+		<div class="container">
+			<div class="jumbotron">
+    	<h1><center> <b> Home Page </b> </center></h1>
+		</div>
+		</div>
 		<main id="main" class="site-main">
+
+
 
 
 		<?php
