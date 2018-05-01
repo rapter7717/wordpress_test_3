@@ -23,8 +23,8 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nvc-interactive' ); ?></a>
-
-	<header id="masthead" class="site-header">
+<div class="navigation-bar">
+	<header id="masthead" class="site-header container">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -44,7 +44,8 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		 <nav id="site-navigation" class="main-navigation">  
+
+		 <nav id="site-navigation" class="main-navigation">
 		<!-- <nav class="navbar navbar-default"> -->
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nvc-interactive' ); ?></button>
 			<?php
@@ -54,6 +55,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+	</div><!-- #navigation bar-->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

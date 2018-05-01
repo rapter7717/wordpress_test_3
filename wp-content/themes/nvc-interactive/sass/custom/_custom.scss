@@ -1,8 +1,10 @@
 body {
-  background-color: lightblue;
+  //background-color: lightblue;
+  background-color: rgba(150, 150, 150, 0.3);
 }
 .site-header {
-  background-color: $color__header-color;
+  // background-color: $color__header-color;
+  background-color: rgba(150, 150, 150, 0.7);
   text-align: center;
 }
 
@@ -13,4 +15,41 @@ body {
 
 .site-content {
   background-color: $color__backdrop-main;
+}
+
+.main-navigation {
+  li{
+    a {
+      color: #414141;
+      margin: 0px .5em;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+    float:none !important;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(150, 150, 150, 1);
+  }
+}
+ .navigation-bar{
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+ }
+
+.developer-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 30vh;
+  background: url(https://images.unsplash.com/photo-1490984902283-b7f4723f3955?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99067299230b1c12eb5f48dae6f8f1b3&auto=format&fit=crop&w=900&q=60) no-repeat center center fixed;
+}
+
+.site-content {
+  padding-top: 60px;
+}
+
+.featured-blogs {
+  margin-top: 2em;
 }
