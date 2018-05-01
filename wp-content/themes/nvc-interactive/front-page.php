@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div class="container-fluid developer-section d-flex justify-content-center align-items-center">
-  <h1> TEST </h1>
+  <div class="hero-heading">
+  <h1> Featured Content </h1>
+</div>
 </div>
 
 <div class="container featured-blogs">
@@ -15,7 +17,7 @@
 $args = array(
   'tag' => 'featured-image',
   'orderby' => 'post_date',
-  'order' => 'ASC'
+  'order' => 'DESC'
 );
 
 // The Query
@@ -29,17 +31,19 @@ if ( $the_query->have_posts() ) {
 
     <div class="row excerpt align-middle">
       <div class="col-md-2">
-        Featured Image
+         <?php the_post_thumbnail( 'thumbnail' ); ?>
+    </div>
         <div class="col-md-10">
+          <?php the_title('<h4>','</h4>'); ?>
           <?php the_excerpt(); ?>
         </div>
-      </div>
     </div>
 
 <?php }
 	/* Restore original Post Data */
 	wp_reset_postdata();
 } else {
+  echo '<h1>Nothing Here </h1>';
 	// no posts found
 }
 ?>

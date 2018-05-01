@@ -42,8 +42,9 @@ body {
 .developer-section {
   padding-left: 0px;
   padding-right: 0px;
-  height: 30vh;
+  height: 40vh;
   background: url(https://images.unsplash.com/photo-1490984902283-b7f4723f3955?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99067299230b1c12eb5f48dae6f8f1b3&auto=format&fit=crop&w=900&q=60) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .site-content {
@@ -52,4 +53,12 @@ body {
 
 .featured-blogs {
   margin-top: 2em;
+}
+
+.hero-heading {
+  h1 {
+    font-size: 12vh;
+    color: white;
+    -webkit-text-stroke: .25vh black;
+  }
 }
