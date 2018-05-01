@@ -18,6 +18,10 @@ body {
 }
 
 .main-navigation {
+  ul {
+    display: block;
+    text-align:center;
+  }
   li{
     a {
       color: #414141;
