@@ -31,10 +31,17 @@ if ( $the_query->have_posts() ) {
 
     <div class="row excerpt align-middle">
       <div class="col-md-2">
-         <?php the_post_thumbnail( 'thumbnail' ); ?>
+        <a href=" <?php echo get_the_permalink(); ?>" >
+          <?php the_post_thumbnail( 'thumbnail' ); ?>
+        </a>
+
     </div>
         <div class="col-md-10">
-          <?php the_title('<h4>','</h4>'); ?>
+
+          <a href="<?php echo get_the_permalink(); ?>" >
+            <?php the_title('<h4>','</h4>'); ?>
+          </a>
+
           <?php the_excerpt(); ?>
         </div>
     </div>
@@ -51,6 +58,15 @@ if ( $the_query->have_posts() ) {
 
 </div>
 </div>
+</div>
+
+
+<div class="container contact">
+ <div class="jumbotron">
+   <h1> Contact Me </h1>
+   <p><?php echo do_shortcode('[contact-form-7 id="1710" title="Contact form 1"]')?></p>
+</div>
+
 </div>
 
 <?php get_footer();

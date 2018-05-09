@@ -135,6 +135,28 @@ function nvc_interactive_scripts() {
 
 	wp_enqueue_script( 'nvc-interactive-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	//Google fonts
+	//* Load Lato and Merriweather Google fonts
+	//add_action( 'wp_enqueue_scripts', 'bg_load_google_fonts' );
+	//function bg_load_google_fonts() {
+	//	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,700|Merriweather:300,700|Josefin+Sans', array(), CHILD_THEME_VERSION );
+//	}
+
+//function wpb_add_google_fonts() {
+
+//wp_enqueue_style( 'wpb-google-fonts', 'http://fonts.googleapis.com/css?family=Josefin+Sans:300italic,400italic,700italic,400,700,300', false );
+//}
+
+//add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+//function wp_enqueue_google_fonts() {
+	//wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto' );
+//}
+//add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_google_fonts' );
+
+
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -174,3 +196,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> <button type="button" class="btn btn-info">...</button></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
