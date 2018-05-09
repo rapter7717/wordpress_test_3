@@ -62,10 +62,12 @@ if ( $the_query->have_posts() ) {
 
 
 <div class="container contact">
- <div class="jumbotron">
+ <div class="jumbotron jumotron-fluid">
    <h1> Contact Me </h1>
-   <p><?php echo do_shortcode('[contact-form-7 id="1710" title="Contact form 1"]')?></p>
 </div>
+
+   <p><?php echo do_shortcode('[contact-form-7 id="1710" title="Contact form 1"]')?></p>
+
 
 </div>
 

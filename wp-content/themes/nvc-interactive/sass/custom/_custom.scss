@@ -71,3 +71,18 @@ body {
 .single-post-page {
   padding-top: 5em;
 }
+
+
+input[type="text"],
+input[type="email"],
+textarea
+{
+    align: center;
+    width: 75vw;
+    background-color: aliceblue;
+    font-family: 'Josefin Sans';
+}
+
+.home-page-contact-form {
+  font-family: 'Josefin Sans';
+}
