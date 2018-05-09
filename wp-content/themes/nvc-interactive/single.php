@@ -31,8 +31,10 @@ get_header();
 		?>
 	</div>
 	<div class="col-sm-4">
+		<div class="jumbotron single-page-sidebar">
 		<?php get_sidebar();
 		?>
+	</div>
 	</div>
 
 	</div>

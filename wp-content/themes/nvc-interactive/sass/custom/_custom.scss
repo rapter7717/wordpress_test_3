@@ -77,12 +77,16 @@ input[type="text"],
 input[type="email"],
 textarea
 {
-    align: center;
-    width: 75vw;
+    float: center;
+    width: 75vmin;
     background-color: aliceblue;
     font-family: 'Josefin Sans';
 }
 
 .home-page-contact-form {
   font-family: 'Josefin Sans';
+}
+
+.single-page-sidebar {
+  background-color: aliceblue;
 }
